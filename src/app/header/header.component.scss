@@ -1,0 +1,55 @@
+// Navbar Image
+
+.navbar{
+    padding: 10px;
+    background: #cd23b2 !important;
+    .navbar-brand{
+        img {
+            // width: 40%;
+            height: 60px;
+        }
+    }
+}
+// Navbar Right side Items.
+.navbar{
+    .navbar-nav {
+            .nav-item{ 
+                // color: black; 
+                font-size: 1.2em;
+                font-weight: 800;
+                .nav-link{
+                    font-weight: 500;
+                    .nav-link:hover{
+                        color: yellow;
+                    }
+                }
+        }
+    }
+}
+.navbar-nav li a {
+    color:black;
+}
+// Navbar Dropdown.
+.dropdown{
+    .dropdown-menu{
+        background-color:#cd23b2; 
+        .dropdown-item{
+                // background-color: #f3c804de;
+                color: black;
+                .dropdown-item:hover{
+                    color: black !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px){
+    .navbar-collapse{
+        background: white;
+    } 
+}
+@media (max-width : 576px){
+    .navbar .navbar-brand img{
+        width: 80%;
+    }
+}

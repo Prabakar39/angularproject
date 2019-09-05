@@ -1,0 +1,47 @@
+<div class="section">
+  <div class="container">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <div class="display-5 display">
+        <h2 class="text-center" style="color: black;">
+          LIST OF BOOKS
+        </h2>
+      </div>
+    </div>
+    <div class="section-content">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-6" *ngFor="let pic of picture;">
+          <div class="card-image">
+            <a routerLink="/listdescription">
+              <p style="cursor: pointer">
+                <img src="{{pic.pic}}" class="img-square">
+              </p>
+              <div class="news">
+                <p class="newstitle" style="cursor: pointer;">{{ pic.title }}<i class="fa fa-play-circle-o" style="font-size:48px;color:red;  position:absolute;"></i></p>  
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-6">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-6 col-6">
+        <div class="similiar-books">
+          <h4 style="color: black; float: left; font-size: 30px; margin: 0 10px 10px 0;">SIMILIAR</h4>
+            <h4 class="book">BOOKS</h4>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-lg-3 col-sm-12" *ngFor="let imageUrl of cardimage;">
+        <a routerLink="/listdescription">
+          <div class="card">
+            <div class="inner">
+              <img class="img-circle" src="{{imageUrl.imageUrl}}">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>

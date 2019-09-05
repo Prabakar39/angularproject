@@ -1,0 +1,15 @@
+.about{
+    position: relative;
+    .container{
+        position: relative;
+        padding-top: 20vh;
+        padding-bottom: 30px;
+        .about-text{
+            color: #311990;
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            padding: 40px;
+        }
+    }
+}

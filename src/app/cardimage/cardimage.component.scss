@@ -1,0 +1,60 @@
+//Card Image
+.container {
+  z-index: 1;
+  padding-top: 20vh;
+  position: relative;
+  .section-content{
+    // .title-recent{
+    //   padding: 20px;
+    //   background-color: black !important;
+    //   border-left: 6px solid #F2184F !important;
+    // }
+    .display-3 {
+      color: #311990;
+      margin-top: 30px;
+    }
+    .banner{
+      padding-top: 14px;
+      color: black;
+    }
+  }
+  .card {
+    background: white !important;
+    width: 100%;
+
+    .inner {
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        transition: all 1.5s ease;
+        height: 300px;
+      }
+    }
+  }
+}
+// Tag signal
+.card{
+  .inner{
+    .price{
+          border-left: red;
+          background: #311990;
+          float: right;
+          position: absolute;
+          padding: 5px 10px;
+    }
+  }
+}
+
+.card-body {
+  .card-title {
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
+@media (max-width : 1200px){
+  .container{
+    padding-top : 10vh;
+  }
+}
